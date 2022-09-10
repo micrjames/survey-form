@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+   	<meta charset="UTF-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link rel="stylesheet" href="css/main.css">
+   	<title>Survey Form</title>
+	</head>
+	<body>
+	   <form id="survey-form">
+		  <legend id="survey-form-heading">
+			 <p id="survey-form-heading-title">Course Survey Form</p>
+			 <p id="survey-form-heading-subtitle">Thank you for taking the time to help us improve the platform.</p>
+		  </legend>
+		  <fieldset id="survey-form-controls">
+			 <label for="survey-form-controls-name">Name</label>
+			 <input type="text" id="survey-form-controls-name" placeholder="Enter your name" >
+			 <label for="survey-form-controls-email">Email</label>
+			 <input type="text" id="survey-form-controls-email" placeholder="Enter your email">
+			 <label for="survey-form-controls-age">Age</label>
+			 <input type="number" min="10" max="99" id="survey-form-controls-age" placeholder="Age">
+			 <label for="survey-form-controls-role">
+				Which option best describes your current role?
+			 </label>
+			 <div class="select">
+				<select name="survey-form-controls-role" id="survey-form-controls-role">
+				   <option value="student">Student</option>
+				   <option value="full-time_work">Full-time Work</option>
+				   <option value="full-time_learner">Full-time Learner</option>
+				   <option value="no comment">Prefer not to say</option>
+				   <option value="other">Other</option>
+				</select>
+			 </div>
+			 <div id="radio">
+				<p>Would you recommend our course to a friend?</p>
+				<input type="radio" id="definitely" name="recommendation" value="definitely">
+				<label for="definitely">Definitely</label>
+				<input type="radio" id="maybe" name="recommendation" value="maybe">
+				<label for="maybe">Maybe</label>
+				<input type="radio" id="not-sure" name="recommendation" value="not sure">
+				<label for="not-sure">Not Sure</label>
+			 </div>
+			 <label for="survey-form-controls-feature">
+				What is your favorite feature of the course?	
+			 </label>
+			 <div class="select">
+				<select name="survey-form-controls-feature" id="survey-form-controls-feature">
+				   <option value="challenges">Challenges</option>
+				   <option value="projects">Projects</option>
+				   <option value="community">Community</option>
+				   <option value="open source">Open Source</option>
+				</select>
+			 </div>
+			 <div id="checkbox">
+			   <p>What would you like to see improved?</p>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="front-end-projects" name="front-end-projects" value="front-end projects">
+				  <label for="front-end-projects">Front-end Projects</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="back-end-projects" name="back-end-projects" value="back-end projects">
+				  <label for="back-end-projects">Back-end Projects</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="data-visualization" name="data-visualization" value="data-visualization">
+				  <label for="data-visualization">Data Visualization</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="challenges" name="challenges" value="challenges">
+				  <label for="challenges">Challenges</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="open-source" name="open-source" value="open source">
+				  <label for="open-source">Open Source Community</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="videos" name="videos" value="videos">
+				  <label for="videos">Videos</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="city-meetups" name="city-meetups" value="city meetups">
+				  <label for="city-meetups">City Meetups</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="wiki" name="wiki" value="wiki">
+				  <label for="wiki">Wiki</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="forum" name="forum" value="forum">
+				  <label for="forum">Forum</label>
+			   </div>
+			   <div class="checkbox-control">
+				  <input type="checkbox" id="additional-courses" name="additional-courses" value="additional-courses">
+				  <label for="additonal-courses">Additional Courses</label>
+			   </div>
+			   <div id="textarea-control">
+				  <label for="comments">Any Comments or Suggestions?</label>
+				  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+			   </div>
+			   <input id="button" type="submit">
+			 </div>
+		  </fieldset>
+	   </form>
+   	<script src="js/index.js" type="module"></script>
+	</body>
+</html>
