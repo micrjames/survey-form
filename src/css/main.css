@@ -54,14 +54,18 @@ body #survey-form-controls {
 body #survey-form-controls label {
   display: block;
   font-size: 1.25rem;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 body #survey-form-controls #radio p {
   font-size: 1.25rem;
+  margin: 0.5rem 0;
 }
 body #survey-form-controls #radio label {
   display: inline;
   font-size: 1.15rem;
+}
+body #survey-form-controls #radio label:not(:last-child) {
+  margin-right: 0.25rem;
 }
 body #survey-form-controls #radio input {
   appearance: none;
@@ -85,6 +89,7 @@ body #survey-form-controls #radio input:focus {
 }
 body #survey-form-controls #checkbox p {
   font-size: 1.25rem;
+  margin: 0.5rem 0;
 }
 body #survey-form-controls #checkbox .checkbox-control input {
   height: 20px;
@@ -117,17 +122,20 @@ body #survey-form-controls #checkbox .checkbox-control input:checked + label::be
   bottom: 0.2rem;
 }
 body #survey-form-controls #textarea-control textarea {
+  font-size: 1.05rem;
+  padding: 0.5rem;
   resize: none;
-}
-body #survey-form-controls #button {
-  background-color: green;
-  cursor: pointer;
+  width: 100%;
+  height: 20vh;
 }
 body #survey-form-controls input {
   width: 100%;
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
   border-radius: 5px;
+}
+body #survey-form-controls .select {
+  margin: 1.2rem 0;
 }
 body #survey-form-controls .select {
   width: 100%;
@@ -154,4 +162,21 @@ body #survey-form-controls .select::after {
 }
 body #survey-form-controls select, body #survey-form-controls .select::after {
   grid-area: select;
+}
+body #survey-form-controls #btn-group {
+  margin-top: 2rem;
+}
+body #survey-form-controls #btn-group .button {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: green;
 }
