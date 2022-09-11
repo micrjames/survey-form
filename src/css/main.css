@@ -77,12 +77,14 @@ body #survey-form-controls #radio input {
   border: 2px solid #060c3b;
   border-radius: 50%;
   margin-right: 0;
+  position: relative;
+  top: 1px;
 }
 body #survey-form-controls #radio input:checked {
   background-color: blue;
 }
 body #survey-form-controls #radio input:hover {
-  box-shadow: 0 0 5px 0px blue inset;
+  box-shadow: 0 0 3px 0px blue inset;
 }
 body #survey-form-controls #radio input:focus {
   outline: 1px solid green;
@@ -92,11 +94,13 @@ body #survey-form-controls #checkbox p {
   margin: 0.5rem 0;
 }
 body #survey-form-controls #checkbox .checkbox-control input {
+  position: relative;
+  top: 3px;
   height: 20px;
   width: 20px;
   appearance: none;
   border: 1px solid #34495E;
-  border-radius: 4px;
+  border-radius: 5px;
   outline: none;
   transition-duration: 0.3s;
   transition-property: all;
